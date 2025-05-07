@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Name Generator</h1>
+        
+        <div class="options">
+            <div class="option-group">
+                <label>Gender</label>
+                <select id="gender">
+                    <option value="any">Any</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            
+            <div class="option-group">
+                <label>Name Style</label>
+                <select id="style">
+                    <option value="modern">Modern</option>
+                    <option value="classic">Classic</option>
+                    <option value="unique">Unique</option>
+                    <option value="fantasy">Fantasy</option>
+                </select>
+            </div>
+        </div>
+        
+        <button id="generate-btn">Generate Name</button>
+        
+        <div class="result-container">
+            <h2 id="result">Your name will appear here</h2>
+            <p id="name-meaning"></p>
+            <button id="save-btn">Save This Name</button>
+        </div>
+        
+        <div class="saved-names">
+            <h3>Saved Names</h3>
+            <ul id="saved-list"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with GitHub Pages</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
